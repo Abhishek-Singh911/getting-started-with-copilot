@@ -87,29 +87,37 @@ section h3 {
 }
 
 .participants-list {
-  list-style: none;
+  list-style: none; /* Hide bullet points */
   padding-left: 0;
 }
 
 .participants-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 6px 0;
-  padding-left: 20px;
-  position: relative;
   font-size: 14px;
   color: #555;
-}
-
-.participants-list li:before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #0066cc;
-  font-weight: bold;
 }
 
 .participants-list li em {
   color: #999;
   font-style: italic;
+}
+
+.delete-participant {
+  background: none;
+  border: none;
+  color: #c62828;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 10px;
+  transition: color 0.2s;
+}
+
+.delete-participant:hover {
+  color: #ff5252;
 }
 
 .form-group {
